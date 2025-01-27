@@ -10,7 +10,7 @@
 <style>
     * {
         margin: 0;
-        font-family: sans-serif;
+        font-family: Verdana;
     }
     .container {
         width: 100%;
@@ -110,32 +110,71 @@
     }
 
     .navegador{
-        background-color: rgb(167, 180, 158);
+        background-color: rgb(129, 140, 120);
+        color: #fff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         border-radius: 25px;
-        height: 50px;
+    }
+    .li{
+        margin-right: 20px;
     }
     body{
         background-color: rgb(92, 114, 133);
     }
-    
+
+    header {
+    background-color: rgb(226, 224, 200);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+      font-family: Verdana;
+    }
+    p{
+        margin: 3%;
+    }
 </style>
 
-<body>
-
-
+<header>
     <div class="navegador">
         <nav>
             
-            <a href="hola">Yo</a>
-            <a href="hola">Lenguajes</a>
-            <a href="hola">Proyectos</a>
-            <a href="hola">Experiencia</a> 
-            <a href="hola">Certificaciones</a>
-            <a href="hola">Contacto</a>
+            <ul>
+                <li><a href="hola">Yo</a></li>
+                <li><a href="hola">Lenguajes</a></li>
+                <li><a href="hola">Proyectos</a></li>
+                <li><a href="hola">Experiencia</a> </li>
+                <li><a href="hola">Certificaciones</a></li>
+                <li><a href="hola">Contacto</a></li>
+            </ul>
+
         </nav>
 
 
     </div>
+</header>
+
+<body>
+
+
     <div class="container">
         <div class="arrows" >
             
@@ -206,15 +245,20 @@
                         <h1>Proyectos</h1>
                     </div>
                     <div class="card3">
-                        <p>Algunos de mis proyectos mas representativos son: </p>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bolder; padding-right: 25px; ">Geekmaps</td>
+                                <td style="font-weight: bolder; padding-left: 25px; ">GatoJuego</td>
+                            </tr>
+                            <tr>
+                                <td style=" padding-right: 25px; ">Geekmaps es un proyecto basado en python y Django que busca crear un epacio para promocionar y reunir Eventos Geeks. Con la funcionalidad adicional de mostrar la ubicacion y planificar un calendario de estos.</td>
+                                <td style=" padding-left: 25px; ">El GatoJuego es un juego hecho en unity desarrollado para uno de mis ramos.</td>
+                            </tr>
 
-                        <p > Geekmaps</p>
-                        <p >Geekmaps es un proyecto basado en python y Django que busca crear un epacio para promocionar y reunir Eventos Geeks. Con la funcionalidad adicional de mostrar la ubicacion y planificar un calendario de estos.</p>
-    
-    
-    
-                        <p > GatoJuego</p>
-                        <p></p> El GatoJuego es un juego hecho en unity desarrollado para uno de mis ramos.</p>
+
+                        </table>
+                        
+
                     </div>
 
                     
