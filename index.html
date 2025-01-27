@@ -14,29 +14,29 @@
     }
     .container {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         overflow: hidden;
-        background: rgb(57, 70, 72);
+        background: rgb(129, 140, 120);
     }
     .slide-left{
-        width: 50%;
+        width: 70%;
         height: 100vh;
-        background: rgb(149, 167, 141);
-        transition: 1s;
+        background: rgb(129, 140, 120);
+        transition: 2s;
     }
     .slide-right{
-        width: 50%;
+        width: 30%;
         height: 100vh;
-        background: rgb(57, 70, 72);
-        transition: 1s;
+        background: rgb(129, 140, 120);
+        transition: 2s;
     }
     .slide{
         width: 100%;
         height: 100vh;
         display: flex;
         justify-content: center;
-        align-items: center;
+        background-color: rgb(92, 114, 133);
     }
     .slide > .title {
         color: whitesmoke;
@@ -46,23 +46,25 @@
         width: 100px;
         height: 100px;
         position: fixed;
-        top: calc(40% - 40px);
-        left: calc(50% - 50px);
+        top: calc(98% - 40px);
+        left: calc(66% - 50px);
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         z-index: 10;
+        border-radius: 25px;
     }
     .arrow-up{
-        background: rgb(200, 198, 175);
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
+        background: rgb(226, 224, 200);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
         cursor: pointer;
     }
     .arrow-down{
-        background: rgb(200, 198, 175);
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
+        background: rgb(226, 224, 200);
+
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
         cursor: pointer;
     }
     .arrow{
@@ -74,10 +76,66 @@
         width: 20px;
     }
 
+    .card{
+        border-radius: 25px; 
+        background-color: rgb(129, 140, 120); 
+        padding: 30px; 
+        width: 70%;
+        height: 70%;
+        display: center;
+        margin: 3%;
+    }
+    .card2{
+        background-color: rgb(167, 180, 158);
+        height: 10%;
+        width: 95%;
+        display: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 3%;
+        margin-left: 3%;
+        border-radius: 25px;
+    }
+    .card3{
+        background-color: rgb(167, 180, 158);
+        height: 80%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: justify;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 5%;
+        border-radius: 25px;
+    }
 
+    .navegador{
+        background-color: rgb(167, 180, 158);
+        border-radius: 25px;
+        height: 50px;
+    }
+    body{
+        background-color: rgb(92, 114, 133);
+    }
+    
 </style>
 
 <body>
+
+
+    <div class="navegador">
+        <nav>
+            
+            <a href="hola">Yo</a>
+            <a href="hola">Lenguajes</a>
+            <a href="hola">Proyectos</a>
+            <a href="hola">Experiencia</a> 
+            <a href="hola">Certificaciones</a>
+            <a href="hola">Contacto</a>
+        </nav>
+
+
+    </div>
     <div class="container">
         <div class="arrows" >
             
@@ -89,75 +147,146 @@
             </div>
             <div id="arrow-down" class="arrow-down arrow">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
                   </svg>
+                  
                   
             </div>
         </div>
 
         <div id="slide-left" class="slide-left">
-            <div class="slide" style="background-color: rgb(57, 70, 72);">
-                <div style="border-radius: 25px; background-color: rgb(149, 167, 141); padding: 30px; ">
-                    <h1>Trabajos anteriores</h1>
+            <div class="slide" >
+                <div class= "card"  >
+                    
+                    <div class="card2">
+                        <h1>Contacto</h1>
+                    </div>
+                    <div class="card3">
 
-                    <p>Algunos de mis proyectos mas representativos son: </p>
-
-                    <p style="font-size: xx-large; text-align: center;"> Geekmaps</p>
-                    <p style="width: 60%;padding-left: 20%; display: flex; text-align: justify; font-size: large;">Geekmaps es un proyecto basado en python y Django que busca crear un epacio para promocionar y reunir Eventos Geeks. Con la funcionalidad adicional de mostrar la ubicacion y planificar un calendario de estos.</p>
-
-
-
-                    <p style="font-size: xx-large; text-align: center;"> GatoJuego</p>
-                    <p style="width: 60%;padding-left: 20%; display: flex; text-align: justify; font-size: large;">El GatoJuego es un juego hecho en unity desarrollado para uno de mis ramos.</p>
+                    </div>
+                    
+                    
+                    
                 </div>
 
             </div>
             
-            <div class="slide" style="background: rgb(57, 70, 72);">
-                <div style="border-radius: 25px; background-color: rgb(149, 167, 141); padding: 30px; ">
-                    <h2 style=" padding-bottom: 25px; text-align: center; "> Manejo de lenguajes y Frameworks</h2>
+            <div class="slide" >
+                <div class= "card">
+                    <div class="card2">
+                        <h1>Certificaciones</h1>
+                    </div>
+                    <div class="card3"></div>
+                    <h2 ></h2>
 
-                    <table>
-                        <tr>
-                            <td style="font-weight: bolder; padding-right: 100px; ">Lenguajes</td>
-                            <td style="font-weight: bolder; padding-left: 100px; ">Frameworks</td>
-                            <td style="font-weight: bolder; padding-left: 100px; ">Bases de datos</td>
-                          </tr>
-                          <tr>
-                            <td style=" padding-right: 100px; ">Python</td>
-                            <td style=" padding-left: 100px; ">Django</td>
-                            <td style=" padding-left: 100px; ">MySQL</td>
-                          <tr>
-                            <td style=" padding-right: 100px; ">Html</td>
-                            <td style=" padding-left: 100px; ">React</td>
-                            <td style=" padding-left: 100px; ">MongoDB</td>
-                          </tr>
-                          <tr>
-                            <td style=" padding-right: 100px; ">Css</td>
-                            <td style=" padding-left: 100px; ">Boostrap</td>
-                          </tr>
-                          <tr>
-                            <td style=" padding-right: 100px; ">Js</td>
-                          </tr>
-                    </table>
+
                 </div>
                 
                 
             </div>
-            <div class="slide " style="background-color: rgb(57, 70, 72);" >
-                <div style="border-radius: 25px; background-color: rgb(149, 167, 141);padding: 30px; ">
+            
+            <div class="slide"  >
+                <div class= "card">
+                    <div class="card2">
+                        <h1>Experiencia</h1>
 
-                    <h1 >Hola, me llamo Joaquín Neira</h1>
+                    </div>
+                    <div class="card3">
+
+                    </div>
+
                     
-                    <p style="font-size: large";>Soy estudiante de ing. Informatica en el instituto profecional Inacap. Me gustaria convertirme en desarrollador y en algun momento hacer un buen juego.</p>
+                    
                 </div>
             </div>
+            
+            <div class="slide"  >
+                <div class= "card">
+                    <div class="card2">
+                        <h1>Proyectos</h1>
+                    </div>
+                    <div class="card3">
+                        <p>Algunos de mis proyectos mas representativos son: </p>
+
+                        <p > Geekmaps</p>
+                        <p >Geekmaps es un proyecto basado en python y Django que busca crear un epacio para promocionar y reunir Eventos Geeks. Con la funcionalidad adicional de mostrar la ubicacion y planificar un calendario de estos.</p>
+    
+    
+    
+                        <p > GatoJuego</p>
+                        <p></p> El GatoJuego es un juego hecho en unity desarrollado para uno de mis ramos.</p>
+                    </div>
+
+                    
+                    
+                </div>
+            </div>
+
+            <div class="slide"  >
+                <div class= "card">
+                    <div class="card2">
+                        <h1>Manejo de lenguajes y Frameworks</h1>
+
+                    </div>
+                    <div class="card3">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bolder; padding-right: 100px; ">Lenguajes</td>
+                                <td style="font-weight: bolder; padding-left: 100px; ">Frameworks</td>
+                                <td style="font-weight: bolder; padding-left: 100px; ">Bases de datos</td>
+                              </tr>
+                              <tr>
+                                <td style=" padding-right: 100px; ">Python</td>
+                                <td style=" padding-left: 100px; ">Django</td>
+                                <td style=" padding-left: 100px; ">MySQL</td>
+                              <tr>
+                                <td style=" padding-right: 100px; ">Html</td>
+                                <td style=" padding-left: 100px; ">React</td>
+                                <td style=" padding-left: 100px; ">MongoDB</td>
+                              </tr>
+                              <tr>
+                                <td style=" padding-right: 100px; ">Css</td>
+                                <td style=" padding-left: 100px; ">Boostrap</td>
+                              </tr>
+                              <tr>
+                                <td style=" padding-right: 100px; ">Js</td>
+                              </tr>
+                        </table>
+                    </div>
+
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="slide"  >
+                <div class= "card">
+                    <div class="card2">
+                        <h1 >Hola, me llamo Joaquín Neira</h1>
+                    </div>
+                    <div class="card3">
+                        <p >Soy estudiante de ing. Informatica en el instituto profecional Inacap. Me gustaria convertirme en desarrollador y en algun momento hacer un buen juego.</p>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+
         </div>
+
         <div id="slide-right" class="slide-right">
             <div class="slide"style="background-image: url('./bg_01.png'); background-size: contain; background-repeat: no-repeat;  background-position: center;"></div>
             <div class="slide"style="background-image: url('./bg_02.png'); background-size: contain; background-repeat: no-repeat;  background-position: center;"></div>
             <div class="slide"style="background-image: url('./bg_03.png'); background-size: contain; background-repeat: no-repeat;  background-position: center;"></div>
+            <div class="slide"style="background-image: url('./bg_04.png'); background-size: contain; background-repeat: no-repeat;  background-position: center;"></div>
+            <div class="slide"style="background-image: url('./bg_05.png'); background-size: contain; background-repeat: no-repeat;  background-position: center;"></div>
+            <div class="slide"style="background-image: url('./bg_06.png'); background-size: contain; background-repeat: no-repeat;  background-position: center;"></div>
         </div>
+
+
+        
     </div>
 
 
@@ -169,7 +298,7 @@
         slideLeft.style.transform = `translateY(-${itemsLenght}vh)`;
 
         let trayectoRight = 100;
-        let trayectoLeft = -200;
+        let trayectoLeft = -500;
 
         document.getElementById('arrow-up').addEventListener('click', onUp);
         document.getElementById('arrow-down').addEventListener('click', onDown);
@@ -181,6 +310,7 @@
         function onDown(){
             startDownAnimation();
             startUpAnimation();
+            
 
         }
 
@@ -188,16 +318,44 @@
             trayectoLeft += 100;
             slideLeft.style.transform =  `translateY(${trayectoLeft}vh)`;
             if(trayectoLeft == 0){
-                trayectoLeft = -300;
+                trayectoLeft =  -600;
             }
         }
         function startUpAnimation(){
             slideRight.style.transform =  `translateY(-${trayectoRight}vh)`;
             trayectoRight += 100;
-            if(trayectoRight == 300){
+            if(trayectoRight == 600){
                 trayectoRight = 0;
             }
         }
+        function linkslide1(){
+
+
+        }
+        function linkslide2(){
+
+
+        }
+        function linkslide3(){
+
+
+        }
+        function linkslide4(){
+
+
+        }
+        function linkslide5(){
+
+
+        }
+        function linkslide6(){
+
+
+        }
+
+
+
+
     </script>
 
 </body>
